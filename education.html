@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Priyal Shinkar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <nav>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="section-title">Education</h1>
+        
+        <div class="education-item">
+            <h3>B.E. in Artificial Intelligence & Data Science</h3>
+            <p><i class="fas fa-university"></i> Datta Meghe College of Engineering, Airoli, Maharashtra, India</p>
+            <p><i class="fas fa-graduation-cap"></i> Second Year (Pursuing)</p>
+            <p><i class="far fa-calendar-alt"></i> Expected Graduation: August 2027</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Diploma in Information Technology (IT)</h3>
+            <p><i class="fas fa-university"></i> Vidyalankar Polytechnic, Mumbai, Maharashtra, India</p>
+            <p><i class="fas fa-percentage"></i> Percentage: 88.81%</p>
+            <p><i class="far fa-calendar-alt"></i> September 2021 - June 2024</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary School Certification (CBSE)</h3>
+            <p><i class="fas fa-university"></i> Bharati Vidyapeeth School, CBD Belapur, Maharashtra, India</p>
+            <p><i class="fas fa-percentage"></i> Percentage: 86.80%</p>
+            <p><i class="far fa-calendar-alt"></i> September 2019 - June 2021</p>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

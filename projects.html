@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Priyal Shinkar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <nav>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="section-title">Projects</h1>
+        
+        <div class="card">
+            <h3><i class="fas fa-mobile-alt"></i> Shadow Connect – Android based project</h3>
+            <p><strong>Status:</strong> Under Development</p>
+            <p><strong>Tools:</strong> Java, XML, Firebase [Authentication, Realtime Database (NoSQL)], Encryption Algorithm, Material Design 3</p>
+            <p><strong>Summary:</strong> A messaging application providing user side encryption for messages requiring user authentication for converting it in normal readable format with option to send normal messages as well.</p>
+            <h4>Responsibilities:</h4>
+            <ul class="skill-list">
+                <li>• Develop the frontend & backend entirely with XML & Java, operate efficiently with Firebase Realtime Database.</li>
+                <li>• Implemented user authentication & verification using Firebase authentication, ensuring secure access.</li>
+                <li>• Utilized Encryption Technique / Algorithm for user-side encryption and allow sending normal messages.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-hand-paper"></i> AirSwipe – Desktop Application Development</h3>
+            <p><strong>Tools:</strong> Python, MediaPipe, OpenCV, Anaconda, PyAutoGui (Home Screen), Visual Studio Code</p>
+            <p><strong>Summary:</strong> A touchless interaction system enabling control of laptop mouse functions via hand gestures and tip detection using a webcam, ideal for presentations or as an alternative to a malfunctioning touchpad with better performance than existing systems by 40%.</p>
+            <h4>Responsibilities:</h4>
+            <ul class="skill-list">
+                <li>• Developed hand gesture recognition system using 2+ technologies implemented like OpenCV, MediaPipe, enabling hands-free control of computer cursor functionalities.</li>
+                <li>• Integrated gesture-based input control with Python and Anaconda environment reducing code lines by 20%, streamlining the interaction for users through real-time hand tracking.</li>
+                <li>• Designed and implemented testing modules to verify gesture accuracy and responsiveness across diverse environments.</li>
+                <li>• Collaborated in designing a user-friendly interface to allow gesture customization and improve accessibility.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-globe"></i> Website Projects</h3>
+            <p><strong>Tools:</strong> HTML, CSS, Vercel, GitHub, VS Code</p>
+            <p><strong>Summary:</strong> Developed a Website for my Portfolio.</p>
+            <h4>Responsibilities:</h4>
+            <ul class="skill-list">
+                <li>• Displayed all my projects and experience and made the website responsive.</li>
+                <li>• Hosted the website on Vercel using GitHub.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

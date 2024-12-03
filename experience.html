@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Priyal Shinkar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <nav>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="section-title">Work Experience</h1>
+        
+        <div class="card">
+            <h3>Java Intern - CrossAsyst Infotech Private Limited</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Navi Mumbai (Remote) | <i class="far fa-calendar-alt"></i> June 2023 – July 2023</p>
+            <ul class="skill-list">
+                <li>• Collaborated on database design and development using MySQL, creating, and managing tables with one-to-one and one-to-many relationships to optimize data storage and retrieval and increased data handling efficiency by 10%.</li>
+                <li>• Implemented Object-Oriented Programming (OOP) concepts, such as abstraction, inheritance, and interfaces, to create modular and reusable code structures in Java reduced code lines by 15%.</li>
+                <li>• Managed dependencies and build processes in Java projects using Maven, streamlining development workflows.</li>
+                <li>• Enhanced application logging using Log4j 2, setting up logging levels (INFO, DEBUG) to monitor and troubleshoot software performance effectively.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Key Achievements</h3>
+            <ul class="skill-list">
+                <li>• Improved data handling efficiency by 10% through optimized database design</li>
+                <li>• Reduced code lines by 15% using OOP principles</li>
+                <li>• Successfully implemented logging system for better monitoring</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
